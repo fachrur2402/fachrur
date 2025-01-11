@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Penjualan Helm</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Penjualan Helm</div>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="transaksi.html">Transaksi</a>
+            <a href="profil.html">Profil</a>
+            <a href="login.html" class="active">Login</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="login">
+            <h2>Masuk ke Akun Anda</h2>
+            
+            <!-- Form Login -->
+            <form id="loginForm" onsubmit="return validateForm()">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="input-group">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+
+            <p>Belum punya akun? <a href="signup.html">Daftar di sini</a></p> <!-- Tautan ke halaman daftar -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Penjualan Helm. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="login.js"></script>
+
+</body>
+</html>

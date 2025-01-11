@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Transaksi - Penjualan Helm</title>
+    <link rel="stylesheet" href="transaksi.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Penjualan Helm</div>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="transaksi.html">Transaksi</a>
+            <a href="profil.html">Profil</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="transaksi">
+            <h2>Daftar Transaksi</h2>
+
+            <!-- Daftar Produk yang akan Dibeli -->
+            <div class="produk">
+                <div class="produk-item">
+                    <img src="agv_pista _GPRR.jpg" alt="Helm A" class="produk-img">
+                    <h3>AGV Pista GPRR</h3>
+                    <p>Harga: Rp 2.500.000</p>
+                    <button onclick="addToCart('Helm A', 500000)">Tambah ke Keranjang</button>
+                </div>
+
+                <div class="produk-item">
+                    <img src="agv_unisex,jpg.jpg" alt="Helm B" class="produk-img">
+                    <h3>AGV Unisex</h3>
+                    <p>Harga: Rp 1.600.000</p>
+                    <button onclick="addToCart('Helm B', 600000)">Tambah ke Keranjang</button>
+                </div>
+
+                <div class="produk-item">
+                    <img src="agv-x3000-limited-edition-full-face-helmet.webp" alt="Helm C" class="produk-img">
+                    <h3>AGV X3000</h3>
+                    <p>Harga: Rp 1.200.000</p>
+                    <button onclick="addToCart('Helm C', 700000)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+
+            <!-- Keranjang Transaksi -->
+            <section class="keranjang">
+                <h3>Keranjang Belanja</h3>
+                <ul id="cart-items">
+                    <!-- Daftar item akan ditambahkan di sini -->
+                </ul>
+                <p>Total: Rp <span id="total-price">0</span></p>
+                <button onclick="checkout()">Proses Pembayaran</button>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Penjualan Helm. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
